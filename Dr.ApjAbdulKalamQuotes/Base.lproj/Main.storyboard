@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr.Apj Adbul Kalam Quotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtH-jR-zv7">
+                                <rect key="frame" x="20" y="28" width="560" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="vMc-p0-moT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUc-S8-24Y">
+                                <rect key="frame" x="438" y="436" width="142" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="cQO-It-tje"/>
+                                    <constraint firstAttribute="height" constant="60" id="rDp-07-2nC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="25"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1v-Hw-yxY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btq-RZ-VFk">
+                                <rect key="frame" x="20" y="436" width="142" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="zIz-01-NWR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="25"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="prevButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ljK-eg-jdD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="WXe-SE-bDu">
+                                <rect key="frame" x="130" y="143" width="341" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="Rxo-sz-k8Y"/>
+                                    <constraint firstAttribute="width" constant="341" id="nry-gj-QWv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dUc-S8-24Y" firstAttribute="top" secondItem="WXe-SE-bDu" secondAttribute="bottom" constant="80" id="9hP-OG-ubI"/>
+                            <constraint firstItem="HtH-jR-zv7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Bse-us-uOo"/>
+                            <constraint firstItem="WXe-SE-bDu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="123" id="C30-6h-TLX"/>
+                            <constraint firstItem="dUc-S8-24Y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OMn-sM-HMq"/>
+                            <constraint firstItem="WXe-SE-bDu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SbR-UP-eJv"/>
+                            <constraint firstItem="btq-RZ-VFk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WT5-Rs-l1c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dUc-S8-24Y" secondAttribute="bottom" constant="104" id="fNk-Uc-I3W"/>
+                            <constraint firstItem="HtH-jR-zv7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fZ8-Lw-uCr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="btq-RZ-VFk" secondAttribute="bottom" constant="104" id="k5d-oA-Y95"/>
+                            <constraint firstItem="HtH-jR-zv7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xUj-dv-snX"/>
+                            <constraint firstItem="btq-RZ-VFk" firstAttribute="top" secondItem="WXe-SE-bDu" secondAttribute="bottom" constant="80" id="y9r-iJ-kZx"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bKN-gA-PBg" appends="YES" id="hGM-VQ-xEo"/>
+                            <outletCollection property="gestureRecognizers" destination="eRn-km-TlQ" appends="YES" id="bNW-Jj-KIt"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="DrApjAbdulKalamQuotes" destination="HtH-jR-zv7" id="jgK-om-0Cm"/>
+                        <outlet property="ImageViewField" destination="WXe-SE-bDu" id="pTo-GG-j2E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="bKN-gA-PBg">
+                    <connections>
+                        <action selector="SwipeLeft:" destination="BYZ-38-t0r" id="RtK-pH-tIC"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="eRn-km-TlQ">
+                    <connections>
+                        <action selector="SwipeRight:" destination="BYZ-38-t0r" id="zLZ-TB-OUB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="275" y="279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main" width="439" height="252"/>
+    </resources>
+</document>
